@@ -3,8 +3,9 @@
 module comparator_tb;
 
 reg a0_in, a1_in, a2_in, a3_in,
-b0_in, b1_in, b2_in, b3_in,
-result_eq_out, result_low_out, result_gr_out;
+b0_in, b1_in, b2_in, b3_in;
+
+wire result_eq_out, result_low_out, result_gr_out;
 
 
 comparator comparator_1(
