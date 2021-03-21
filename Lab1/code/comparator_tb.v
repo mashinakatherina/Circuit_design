@@ -45,7 +45,7 @@ b3_in = test_val_b[3];
 
 #10
 
-$display ("comparator output is correct. a_0=%b, a_1=%b, a_2=%b, a_3=%b, b_0=%b, b_1=%b, b_2=%b, b_3=%b, a=%b, b=%b, result=%b",
+$display ("comparator output is correct. a_0=%b, a_1=%b, a_2=%b, a_3=%b, b_0=%b, b_1=%b, b_2=%b, b_3=%b, a=%b, b=%b, result_gr=%b, result_eq=%b, result_low=%b",
 a0_in, a1_in, a2_in, a3_in,
 b0_in, b1_in, b2_in, b3_in,
 test_val_a, test_val_b, result_gr_out, result_eq_out, result_low_out);
