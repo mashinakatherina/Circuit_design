@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e40ef-80f8-4f1a-9b09-8c9c13835689" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab2/main.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/mult.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/sqrt.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/test.v" beforeDir="false" />
-    </list>
+    <list default="true" id="aa8e40ef-80f8-4f1a-9b09-8c9c13835689" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
