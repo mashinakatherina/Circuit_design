@@ -1,4 +1,24 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/15/2021 11:14:31 PM
+// Design Name: 
+// Module Name: mult
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 
 module mult (
   input clk_i,
@@ -7,7 +27,7 @@ module mult (
   input [7:0] b_bi,
   input start_i,
   output busy_o,
-  output reg [23:0] y_bo
+  output reg [15:0] y_bo
 );
   localparam IDLE = 1'b0;
   localparam WORK = 1'b1;

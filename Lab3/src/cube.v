@@ -1,4 +1,24 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/15/2021 11:15:52 PM
+// Design Name: 
+// Module Name: cube
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 
 module cube (
   input clk_i,
@@ -6,7 +26,7 @@ module cube (
   input [7:0] a_bi,
   input start_i,
   output [1:0] busy_o,
-  output reg [23:0] y_bo 
+  output reg [15:0] y_bo 
 );
   localparam IDLE = 2'h0;
   localparam FIRST_WORK = 2'h1;
@@ -40,10 +60,14 @@ module cube (
             a <= {8'b0, a_bi};
             b <= a_bi;
             start <= 1;
-         end
         end
-        case(state)
-			FIRST_WORK:
+      end  
+//    end
+//  always @(mult_result) 
+//    begin
+        start <= 0;
+        case (state)
+            FIRST_WORK:
                 begin
                     state <= SECOND_WORK;
                     a <= mult_result[15:0];
@@ -54,6 +78,6 @@ module cube (
                     state <= IDLE;
                     y_bo <= mult_result;
                 end    
-      endcase   
+        endcase
     end    
 endmodule
